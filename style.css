@@ -2,177 +2,47 @@ body {
 	background-color: #ffffff;
 }
 
-.paw-print {
-    position: absolute;
-    z-index: 0;
-}
-.pad {
-    width: 25px;
-    height: 27px;
-    background-color: #f7e3a142;
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    display: block;
-    position: absolute;
-}
-.large {
-    width: 70px;
-    height: 80px;
-    transform: rotate(80deg);
-    left: 0;
-    top: 0;
-}
-.small-1 {
-    width: 20px;
-    height: 28px;
-    background-color: #f7e3a142;
-    border-radius: 50%;
-    transform: rotate(50deg);
-    left: 45px;
-    top: -22px;
-    position: absolute;
-}
-.small-2 {
-    width: 20px;
-    height: 28px;
-    background-color: #f7e3a142;
-    border-radius: 50%;
-    transform: rotate(65deg);
-    left: 74px;
-    top: 0px;
-    position: absolute;
-}
-.small-3 {
-    width: 20px;
-    height: 28px;
-    background-color: #f7e3a142;
-    border-radius: 50%;
-    transform: rotate(98deg);
-    left: 78px;
-    top: 37px;
-    position: absolute;
-}
-.small-4 {
-    width: 20px;
-    height: 28px;
-    background-color: #f7e3a12f;
-    border-radius: 50%;
-    transform: rotate(140deg);
-    left: 58px;
-    top: 67px;
-    position: absolute;
+.paw-bg {
+	position: fixed;
+	z-index: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+	overflow: hidden;
 }
 
-.paw-bg {
-    position: fixed;
-    z-index: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
+.paw-print {
+	position: absolute;
+	z-index: 0;
+	font-size: clamp(4rem, 10vw, 10rem);
+	line-height: 1;
+	filter: sepia(1) saturate(3) brightness(1.4) hue-rotate(5deg);
+	opacity: 0.2;
 }
+
 
 main {
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    max-width: 700px;
-    margin: 0 auto;
-    color: #333333;
-    line-height: 1.7;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	max-width: 700px;
+	margin: 0 auto;
+	color: #333333;
+	line-height: 1.7;
 }
 
 .site-logo {
-    display: block;
-    margin: 0 auto 16px auto;
-    max-width: 350px;
-    height: auto;
+	display: block;
+	margin: 0 auto 16px auto;
+	max-width: 350px;
+	height: auto;
 }
 
 main ul {
-    text-align: left;
-    margin-left: 2em;
+	text-align: left;
+	margin-left: 2em;
 }
 
 main li {
-    text-align: left;
-}
-/* Mobile paw print spacing and sizing */
-@media (max-width: 600px) {
-    /* Space paw rows further apart */
-    .paw-bg .paw-print:nth-child(1),
-    .paw-bg .paw-print:nth-child(3),
-    .paw-bg .paw-print:nth-child(5),
-    .paw-bg .paw-print:nth-child(7),
-    .paw-bg .paw-print:nth-child(9) {
-        top: 8vh !important;
-    }
-    .paw-bg .paw-print:nth-child(2),
-    .paw-bg .paw-print:nth-child(4),
-    .paw-bg .paw-print:nth-child(6),
-    .paw-bg .paw-print:nth-child(8),
-    .paw-bg .paw-print:nth-child(10) {
-        top: 16vh !important;
-    }
-    .paw-bg .paw-print:nth-child(11),
-    .paw-bg .paw-print:nth-child(13),
-    .paw-bg .paw-print:nth-child(15),
-    .paw-bg .paw-print:nth-child(17),
-    .paw-bg .paw-print:nth-child(19) {
-        top: 28vh !important;
-    }
-    .paw-bg .paw-print:nth-child(12),
-    .paw-bg .paw-print:nth-child(14),
-    .paw-bg .paw-print:nth-child(16),
-    .paw-bg .paw-print:nth-child(18),
-    .paw-bg .paw-print:nth-child(20) {
-        top: 36vh !important;
-    }
-    .paw-bg .paw-print:nth-child(21),
-    .paw-bg .paw-print:nth-child(23),
-    .paw-bg .paw-print:nth-child(25),
-    .paw-bg .paw-print:nth-child(27),
-    .paw-bg .paw-print:nth-child(29) {
-        top: 52vh !important;
-    }
-    .paw-bg .paw-print:nth-child(22),
-    .paw-bg .paw-print:nth-child(24),
-    .paw-bg .paw-print:nth-child(26),
-    .paw-bg .paw-print:nth-child(28),
-    .paw-bg .paw-print:nth-child(30) {
-        top: 60vh !important;
-    }
-    /* Use relative units for paw size and pad positions */
-    .pad.large {
-        width: 8vw;
-        height: 10vw;
-        left: 0;
-        top: 0;
-    }
-    .pad {
-        width: 2.5vw;
-        height: 3vw;
-    }
-    .small-1 {
-        left: 5vw;
-        top: -2vw;
-        width: 2vw;
-        height: 3vw;
-    }
-    .small-2 {
-        left: 8vw;
-        top: 0vw;
-        width: 2vw;
-        height: 3vw;
-    }
-    .small-3 {
-        left: 8.5vw;
-        top: 4vw;
-        width: 2vw;
-        height: 3vw;
-    }
-    .small-4 {
-        left: 6vw;
-        top: 7vw;
-        width: 2vw;
-        height: 3vw;
-    }
+	text-align: left;
 }

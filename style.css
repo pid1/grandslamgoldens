@@ -1,48 +1,47 @@
 body {
-	background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .paw-bg {
-	position: fixed;
-	z-index: 0;
-	width: 100vw;
-	height: 100vh;
-	pointer-events: none;
-	overflow: hidden;
+  position: fixed;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
 }
 
 .paw-print {
-	position: absolute;
-	z-index: 0;
-	font-size: clamp(4rem, 10vw, 10rem);
-	line-height: 1;
-	filter: sepia(1) saturate(3) brightness(1.4) hue-rotate(5deg);
-	opacity: 0.2;
+  position: absolute;
+  z-index: 0;
+  font-size: clamp(4rem, 10vw, 10rem);
+  line-height: 1;
+  filter: sepia(1) saturate(3) brightness(1.4) hue-rotate(5deg);
+  opacity: 0.2;
 }
 
-
 main {
-	text-align: center;
-	position: relative;
-	z-index: 1;
-	max-width: 700px;
-	margin: 0 auto;
-	color: #333333;
-	line-height: 1.7;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #333333;
+  line-height: 1.7;
 }
 
 .site-logo {
-	display: block;
-	margin: 0 auto 16px auto;
-	max-width: 350px;
-	height: auto;
+  display: block;
+  margin: 0 auto 16px auto;
+  max-width: 350px;
+  height: auto;
 }
 
 main ul {
-	text-align: left;
-	margin-left: 2em;
+  text-align: left;
+  margin-left: 2em;
 }
 
 main li {
-	text-align: left;
+  text-align: left;
 }

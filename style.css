@@ -237,7 +237,10 @@ footer p {
 
 @media (max-width: 600px) {
   .sheet {
-    background-image: none;
+    /* The text spans the sheet here, so the paws shrink and stay behind it. */
+    background-size:
+      120px, 90px, 110px, 100px, 130px, 85px, 115px, 95px, 120px, 90px, 110px,
+      100px;
     border-left-width: 6px;
     border-right-width: 6px;
     box-shadow:
